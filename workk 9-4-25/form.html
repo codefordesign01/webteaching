@@ -3,9 +3,14 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
+ <!-- font stylé links -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  <style>
   body{
    margin:0;
+   font-family: "Roboto", sans-serif;
   }
   .main_box{
    padding: 50px 100px;
@@ -14,7 +19,6 @@
   }
   .left_side{
    width: 50%;
-   height: 500px;
    background-color: #3786be;
    border-radius: 10px 0px 0px 10px;
    padding: 100px 40px;
@@ -38,9 +42,44 @@
   }
   .right_side{
    width: 50%;
-   height: 500px;
    background-color: white;
    border-radius: 0px 10px 10px 0px;
+   padding: 100px 40px;
+   box-sizing: border-box;
+  }
+  .right_side h1{
+    color:#3786be;
+  }
+  .input_style{
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border:none;
+    box-shadow:5px 5px 10px gray ;
+  }
+  .group{
+    display: flex;
+    justify-content: space-between;
+  }
+  .group-left{
+    width: 48%;
+  }
+  .group-right{
+    width: 48%;
+  }
+  .btn{
+    padding: 10px 40px;
+    background-color: #3786be;
+    color: #fff;
+    border:none;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .btn_box{
+    text-align: center;
+  }
+  .mb{
+    margin-bottom: 30px;
   }
  </style>
 </head>
@@ -53,7 +92,56 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit ad quisquam voluptatibus assumenda, deleniti blanditiis eius voluptate sapiente totam.</p>
     <button>Read More</button>
    </div>
-   <div class="right_side"></div>
+   <div class="right_side">
+    <h1>REGISTER FORM</h1>
+    <!-- group start here -->
+    <div class="group mb">
+      <div class="group-left">
+        <label>Enter First Name</label>
+        <input type="text" class="input_style" />
+      </div>
+      <div class="group-right">
+        <label>Enter Last Name</label>
+        <input type="text" class="input_style" />
+      </div>
+    </div>
+    <!-- group end here -->
+
+    <!-- email input box start here -->
+     <div class="mb">
+      <label>Enter Email</label>
+      <input type="email" class="input_style" />
+     </div>
+     <!-- email input box end here -->
+
+     <!-- group start here -->
+    <div class="group mb">
+      <div class="group-left">
+        <label>Password</label>
+        <input type="password" class="input_style" />
+      </div>
+      <div class="group-right">
+        <label>Confirm Password</label>
+        <input type="password" class="input_style" />
+      </div>
+    </div>
+    <!-- group end here -->
+
+    <!-- checkbox input start here -->
+     <div class="mb">
+      <input type="checkbox" />
+      <label>Checkbox here</label>
+     </div>
+     <!-- checkbox input end here -->
+
+     <!-- button box -->
+      <div class="btn_box">
+        <button class="btn">
+          submit
+        </button>
+      </div>
+
+   </div>
   </div>
 </body>
 </html>

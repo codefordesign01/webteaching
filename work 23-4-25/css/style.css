@@ -1,0 +1,22 @@
+.box{
+ width: 200px;
+ height: 200px;
+ background-color: blue;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.main{
+ border:5px solid;
+ height: 500px;
+ position: relative;
+}
+
+/* position
+   media query
+   trasform
+   trasition
+   grid
+   animations
+*/
+/* boostrap */
